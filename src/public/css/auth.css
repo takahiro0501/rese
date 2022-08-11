@@ -1,0 +1,151 @@
+.header {
+  padding: 30px 0 0 50px;
+}
+
+.contents {
+  background-color: #eeeeee;
+  width: 100%;
+  height: 100vh;;
+}
+
+.auth {
+  width: 35%;
+  margin: 150px auto;
+  background-color: white;
+  border-radius: 0 0 5px 5px;
+  padding-bottom: 20px;
+  box-shadow: 0 3px 10px 0 rgba(0, 0, 0, .5);
+}
+
+.auth__title {
+  background-color: #305dff;
+  color: white;
+  padding: 30px 20px;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  border-radius: 5px 5px 0 0; 
+}
+
+.auth__form {
+  width: 100%;
+}
+
+.auth__form-parts {
+  width: 100%;
+  padding: 25px 7% 0 7%;
+  vertical-align: middle;
+}
+
+.auth__form-img {
+  display: inline-block;
+  width: 30px;
+}
+
+.auth__form-inp {
+  display: inline-block;
+  width: 75%;
+}
+
+.auth__form-img img {
+  width: 100%;
+  vertical-align: middle;
+}
+
+.auth__form-inp input {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid black;
+  font-size: 18px;
+  outline: none;
+}
+
+.auth__form-error {
+  color: red;
+  padding: 0 0 0 15%;
+}
+
+.auth-form-button {
+  text-align: right;
+  padding: 30px 7% 0 0;
+}
+
+.auth-form-button button {
+  background-color: #305dff;
+  color: white;
+  padding: 8px 15px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.auth-form-button button:hover {
+  background-color: #4d7fff;
+}
+
+.auth__message {
+  padding: 10px;
+  font-size: 22px;
+}
+
+
+.auth__mail-complete {
+  background-color: #305dff;
+  color: white;
+  padding: 8px 15px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+}
+
+.auth__jump {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.auth__jump-btn {
+  background-color: #305dff;
+  padding: 3px 10px;
+  border: none;
+  border-radius: 5px;
+}
+
+.auth__mail {
+  font-size: 14px;
+  padding: 0 10px 5px 10px;
+}
+
+.auth__resend {
+  font-size: 14px;
+  padding: 20px 10px 5px 10px;
+}
+
+.auth__resend-form {
+  text-align: center;
+}
+
+.auth__resend-form-submit button {
+  background-color: #305dff;
+  padding: 3px 10px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+
+  .auth {
+    width: 70%;
+  }
+  .auth__title {
+    font-size: 24px;
+  }
+
+  .auth-form-button button {
+    font-size: 18px;
+  }
+
+}

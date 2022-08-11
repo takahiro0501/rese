@@ -1,0 +1,31 @@
+
+.thanks {
+  width: 40%;
+  height: 40vh;
+  margin: 30px auto;
+  text-align: center;
+  background-color: white;
+  box-shadow: 0 3px 10px 0 rgba(0, 0, 0, .5);
+}
+
+.thanks__msg {
+  font-size: 24px;
+  padding-top: 15vh;
+  padding-bottom: 5vh;
+}
+
+.thanks__btn button{
+  background-color: #305dff;
+  border-radius: 5px;
+  border: none;
+  padding: 10px;
+}
+
+.thanks__btn a {
+  color: white;
+  text-decoration: none;
+}
+
+.thanks__btn a:visited {
+  color: white;
+}

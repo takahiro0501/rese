@@ -1,0 +1,104 @@
+{
+    "shoptimes" : [
+        {
+            "shop_id": "1",
+            "start_time": "09:00",
+            "end_time": "22:00"
+        },
+        {
+            "shop_id": "2",
+            "start_time": "11:00",
+            "end_time": "00:00"
+        },
+        {
+            "shop_id": "3",
+            "start_time": "16:00",
+            "end_time": "2:00"
+        },
+        {
+            "shop_id": "4",
+            "start_time": "15:00",
+            "end_time": "23:00"
+        },
+        {
+            "shop_id": "5",
+            "start_time": "12:00",
+            "end_time": "20:00"
+        },
+        {
+            "shop_id": "6",
+            "start_time": "11:00",
+            "end_time": "22:00"
+        },
+        {
+            "shop_id": "7",
+            "start_time": "15:00",
+            "end_time": "23:00"
+        },
+        {
+            "shop_id": "8",
+            "start_time": "12:00",
+            "end_time": "20:00"
+        },
+        {
+            "shop_id": "9",
+            "start_time": "16:00",
+            "end_time": "2:00"
+        },
+        {
+            "shop_id": "10",
+            "start_time": "09:00",
+            "end_time": "22:00"
+        },
+        {
+            "shop_id": "11",
+            "start_time": "11:00",
+            "end_time": "00:00"
+        },
+        {
+            "shop_id": "12",
+            "start_time": "11:00",
+            "end_time": "00:00"
+        },
+        {
+            "shop_id": "13",
+            "start_time": "16:00",
+            "end_time": "2:00"
+        },
+        {
+            "shop_id": "14",
+            "start_time": "09:00",
+            "end_time": "22:00"
+        },
+        {
+            "shop_id": "15",
+            "start_time": "12:00",
+            "end_time": "20:00"
+        },
+        {
+            "shop_id": "16",
+            "start_time": "16:00",
+            "end_time": "2:00"
+        },
+        {
+            "shop_id": "17",
+            "start_time": "09:00",
+            "end_time": "22:00"
+        },
+        {
+            "shop_id": "18",
+            "start_time": "11:00",
+            "end_time": "00:00"
+        },
+        {
+            "shop_id": "19",
+            "start_time": "15:00",
+            "end_time": "23:00"
+        },
+        {
+            "shop_id": "20",
+            "start_time": "09:00",
+            "end_time": "22:00"
+        }
+    ]
+}

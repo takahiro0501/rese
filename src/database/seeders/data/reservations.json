@@ -1,0 +1,60 @@
+{
+    "reservations" : [
+    {
+        "user_id": "22",
+        "shop_id": "1",
+        "num_of_users": "7",
+        "start_at": "2022-07-24 09:00:00",
+        "visited": "0",
+        "payment": "0"
+    },
+    {
+        "user_id": "22",
+        "shop_id": "2",
+        "num_of_users": "6",
+        "start_at": "2022-07-24 16:00:00",
+        "visited": "0",
+        "payment": "0"
+    },
+    {
+        "user_id": "23",
+        "shop_id": "1",
+        "num_of_users": "99",
+        "start_at": "2022-07-24 18:00:00",
+        "visited": "0",
+        "payment": "0"
+    },
+    {
+        "user_id": "23",
+        "shop_id": "2",
+        "num_of_users": "1",
+        "start_at": "2022-07-24 14:00:00",
+        "visited": "0",
+        "payment": "0"
+    },
+    {
+        "user_id": "24",
+        "shop_id": "1",
+        "num_of_users": "5",
+        "start_at": "2022-07-24 18:30:00",
+        "visited": "0",
+        "payment": "0"
+    },
+    {
+        "user_id": "22",
+        "shop_id": "1",
+        "num_of_users": "5",
+        "start_at": "2022-12-24 09:00:00",
+        "visited": "0",
+        "payment": "0"
+    },
+    {
+        "user_id": "22",
+        "shop_id": "1",
+        "num_of_users": "2",
+        "start_at": "2022-12-26 09:00:00",
+        "visited": "0",
+        "payment": "0"
+    }
+  ]
+}

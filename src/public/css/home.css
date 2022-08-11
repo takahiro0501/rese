@@ -1,0 +1,157 @@
+.home {
+  background-color: #eeeeee;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.search-box {
+  width: 90%;
+  padding: 15px 10px;
+  background-color: white;
+  box-shadow: 0 3px 10px 0 rgba(0, 0, 0, .5);
+  border-radius: 5px;
+}
+
+.main__content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.shopcard {
+  width: 23%;
+  margin: 0 10px 20px 0;
+  border-radius: 5px;
+  box-shadow: 0 3px 10px 0 rgba(0, 0, 0, .5);
+}
+
+.shopcard-img {
+  width: 100%;
+}
+
+.shopcard-ttl {
+  padding: 15px 20px;
+  font-weight: bold;
+}
+
+.flex {
+  display: flex;
+  padding: 0 0 15px 20px;
+}
+
+.flex p {
+  font-size: 12px;
+}
+
+.shopcard-area {
+  padding-right: 3px;
+}
+
+.shopcard-img img {
+  width: 100%;
+  height: 200px;
+  border-radius: 5px 5px 0 0;
+  object-fit: cover;
+}
+
+.favorite-img{
+  width: 100%;
+  cursor: pointer;
+}
+
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px 15px 20px;
+}
+
+.shopcard-detail {
+  background-color: #305dff;
+  border: none;
+  color: white;
+  padding: 7px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.search-box {
+  width: 100%;
+}
+
+.search-select{
+  display: inline-block;
+  padding-right: 8px;
+  border-right: 1px solid gray;
+  width: 15%;
+}
+
+.search-area {
+  border: none;
+  width: 100%;
+  outline: none;
+}
+
+.search-genre {
+  border: none;
+  width: 100%;
+  outline: none;
+}
+
+.search-input {
+  display: inline-block;
+  width: 50%;
+}
+
+.search-img {
+  width: 5%;
+  vertical-align: middle;
+}
+
+.keyword {
+  width: 85%;
+  outline: none;
+  border: none;
+}
+
+@media screen and (max-width: 768px) {
+
+  .shopcard {
+      width: 45%;
+    }
+
+  .search-box {
+    padding: 15px 0 15px 5px;
+  }
+  .search-select {
+    width: 23%;
+  }
+
+  .search-select select {
+    font-size: 18px;
+  }
+
+  .search-input {
+    width: 40%;
+    font-size: 18px;
+  }
+
+  .search-img {
+    width: 8%;
+  }
+
+  .shopcard-ttl {
+    font-size: 24px;
+  }
+  .flex p {
+    font-size: 18px;
+    padding: 15px 0;
+  }
+
+  .shopcard-detail {
+    font-size: 18px;
+  }
+
+  .favorite-img {
+    width: 120%;
+  }
+
+}

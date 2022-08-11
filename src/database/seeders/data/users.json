@@ -1,0 +1,186 @@
+{
+    "users" : [
+        {
+            "name": "admin",
+            "email": "admin@test.com",
+            "email_verified_at": "",
+            "password": "12345678",
+            "role_id": "1"
+        },
+        {
+            "name": "shop1",
+            "email": "shop1@test.com",
+            "email_verified_at": "",
+            "password": "12345678",
+            "role_id": "3"
+        },
+        {
+            "name": "shop2",
+            "email": "shop2@test.com",
+            "email_verified_at": "",
+            "password": "12345678",
+            "role_id": "4"
+        },
+        {
+            "name": "shop3",
+            "email": "shop3@test.com",
+            "email_verified_at": "",
+            "password": "12345678",
+            "role_id": "5"
+        },
+        {
+            "name": "shop4",
+            "email": "shop4@test.com",
+            "email_verified_at": "",
+            "password": "12345678",
+            "role_id": "6"
+        },
+        {
+            "name": "shop5",
+            "email": "shop5@test.com",
+            "email_verified_at": "",
+            "password": "12345678",
+            "role_id": "7"
+        },
+        {
+            "name": "shop6",
+            "email": "shop6@test.com",
+            "email_verified_at": "",
+            "password": "12345678",
+            "role_id": "8"
+        },
+        {
+            "name": "shop7",
+            "email": "shop7@test.com",
+            "email_verified_at": "",
+            "password": "12345678",
+            "role_id": "9"
+        },
+        {
+            "name": "shop8",
+            "email": "shop8@test.com",
+            "email_verified_at": "",
+            "password": "12345678",
+            "role_id": "10"
+        },
+        {
+            "name": "shop9",
+            "email": "shop9@test.com",
+            "email_verified_at": "",
+            "password": "12345678",
+            "role_id": "11"
+        },
+        {
+            "name": "shop10",
+            "email": "shop10@test.com",
+            "email_verified_at": "",
+            "password": "12345678",
+            "role_id": "12"
+        },
+        {
+            "name": "shop11",
+            "email": "shop11@test.com",
+            "email_verified_at": "",
+            "password": "12345678",
+            "role_id": "13"
+        },
+        {
+            "name": "shop12",
+            "email": "shop12@test.com",
+            "email_verified_at": "",
+            "password": "12345678",
+            "role_id": "14"
+        },
+        {
+            "name": "shop13",
+            "email": "shop13@test.com",
+            "email_verified_at": "",
+            "password": "12345678",
+            "role_id": "15"
+        },
+        {
+            "name": "shop14",
+            "email": "shop14@test.com",
+            "email_verified_at": "",
+            "password": "12345678",
+            "role_id": "16"
+        },
+        {
+            "name": "shop15",
+            "email": "shop15@test.com",
+            "email_verified_at": "",
+            "password": "12345678",
+            "role_id": "17"
+        },
+        {
+            "name": "shop16",
+            "email": "shop16@test.com",
+            "email_verified_at": "",
+            "password": "12345678",
+            "role_id": "18"
+        },
+        {
+            "name": "shop17",
+            "email": "shop17@test.com",
+            "email_verified_at": "",
+            "password": "12345678",
+            "role_id": "19"
+        },
+        {
+            "name": "shop18",
+            "email": "shop18@test.com",
+            "email_verified_at": "",
+            "password": "12345678",
+            "role_id": "20"
+        },
+        {
+            "name": "shop19",
+            "email": "shop19@test.com",
+            "email_verified_at": "",
+            "password": "12345678",
+            "role_id": "21"
+        },
+        {
+            "name": "shop20",
+            "email": "shop20@test.com",
+            "email_verified_at": "",
+            "password": "12345678",
+            "role_id": "22"
+        },
+        {
+            "name": "user1",
+            "email": "user1@test.com",
+            "email_verified_at": "2022-07-27 10:09:19",
+            "password": "12345678",
+            "role_id": "0"
+        },
+        {
+            "name": "user2",
+            "email": "user2@test.com",
+            "email_verified_at": "2022-07-27 10:09:19",
+            "password": "12345678",
+            "role_id": "0"
+        },
+        {
+            "name": "user3",
+            "email": "user3@test.com",
+            "email_verified_at": "2022-07-27 10:09:19",
+            "password": "12345678",
+            "role_id": "0"
+        },
+        {
+            "name": "user4",
+            "email": "user4@test.com",
+            "email_verified_at": "",
+            "password": "12345678",
+            "role_id": "0"
+        },
+        {
+            "name": "user5",
+            "email": "user5@test.com",
+            "email_verified_at": "",
+            "password": "12345678",
+            "role_id": "0"
+        }
+    ]
+}

@@ -1,0 +1,58 @@
+
+.payment {
+  width: 20%;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 3px 10px 0 rgba(0, 0, 0, .5);
+  padding: 15px;
+  margin: 0 auto;
+}
+
+.payment-ttl {
+  font-size: 20px;
+  font-weight: bold;
+  padding-bottom: 20px;
+}
+
+.money {
+  display: block;
+  width: 100px;
+}
+
+.form-parts {
+  padding-bottom: 15px;
+}
+
+.money::-webkit-outer-spin-button,
+.money::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.money {
+  -moz-appearance: textfield;
+}
+
+#card-errors {
+  color: red;
+}
+
+.payment-btn {
+  text-align: center;
+}
+
+.payment-btn input {
+  background-color: #305dff;
+  color: white;
+  padding: 8px 15px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+

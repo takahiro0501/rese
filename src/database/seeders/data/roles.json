@@ -1,0 +1,92 @@
+{
+    "roles" : [
+        {
+            "shop_id": "0",
+            "name": "manager"
+        },
+        {
+            "shop_id": "0",
+            "name": "dammy"
+        },
+        {
+            "shop_id": "1",
+            "name": "仙人"
+        },
+        {
+            "shop_id": "2",
+            "name": "牛助"
+        },
+        {
+            "shop_id": "3",
+            "name": "戦慄"
+        },
+        {
+            "shop_id": "4",
+            "name": "ルーク"
+        },
+        {
+            "shop_id": "5",
+            "name": "志摩屋"
+        },
+        {
+            "shop_id": "6",
+            "name": "香"
+        },
+        {
+            "shop_id": "7",
+            "name": "JJ"
+        },
+        {
+            "shop_id": "8",
+            "name": "らーめん極み"
+        },
+        {
+            "shop_id": "9",
+            "name": "鳥雨"
+        },
+        {
+            "shop_id": "10",
+            "name": "築地色合"
+        },
+        {
+            "shop_id": "11",
+            "name": "晴海"
+        },
+        {
+            "shop_id": "12",
+            "name": "三子"
+        },
+        {
+            "shop_id": "13",
+            "name": "八戒"
+        },
+        {
+            "shop_id": "14",
+            "name": "福助"
+        },
+        {
+            "shop_id": "15",
+            "name": "ラー北"
+        },
+        {
+            "shop_id": "16",
+            "name": "翔"
+        },
+        {
+            "shop_id": "17",
+            "name": "経緯"
+        },
+        {
+            "shop_id": "18",
+            "name": "漆"
+        },
+        {
+            "shop_id": "19",
+            "name": "THE TOOL"
+        },
+        {
+            "shop_id": "20",
+            "name": "木船"
+        }
+    ]
+}

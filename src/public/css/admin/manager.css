@@ -1,0 +1,367 @@
+.main {
+  background-color: #eeeeee;
+  width: 100%;
+  min-height: 100vh;
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+
+.auth {
+  width: 35%;
+  margin: 150px auto;
+  background-color: white;
+  border-radius: 0 0 5px 5px;
+  padding-bottom: 20px;
+  box-shadow: 0 3px 10px 0 rgba(0, 0, 0, .5);
+}
+
+.auth__title {
+  background-color: #305dff;
+  color: white;
+  padding: 30px 20px;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  border-radius: 5px 5px 0 0;
+}
+
+.auth__form {
+  width: 100%;
+}
+
+.auth__form-parts {
+  width: 100%;
+  padding: 25px 7% 0 7%;
+  vertical-align: middle;
+}
+
+.auth__form-img {
+  display: inline-block;
+  width: 30px;
+}
+
+.auth__form-inp {
+  display: inline-block;
+  width: 75%;
+}
+
+.auth__form-img img {
+  width: 100%;
+  vertical-align: middle;
+}
+
+.auth__form-inp input {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid black;
+  font-size: 18px;
+  outline: none;
+}
+
+.auth__form-error {
+  color: red;
+  padding-left: 15%
+} 
+
+.auth-form-button {
+  text-align: right;
+  padding: 30px 7% 0 0;
+}
+
+.auth-form-button button {
+  background-color: #305dff;
+  color: white;
+  padding: 8px 15px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.auth-form-button button:hover {
+  background-color: #4d7fff;
+}
+
+.admin {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.admin__header {
+  display: flex;
+}
+
+.admin__header-ttl {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.admin__header-logout {
+  margin-left: 15px;
+}
+
+.admin__header-logout input {
+  font-size: 12px;
+  margin-top: 8px;
+  border: none;
+  background-color: grey;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.admin__header-logout input:hover {
+  background-color: darkgrey;
+}
+
+.admin__form {
+  background-color: white;
+  border-radius: 0 0 5px 5px;
+  padding: 20px 20px;
+  box-shadow: 0 3px 10px 0 rgba(0, 0, 0, .5);
+}
+
+.admin__form-parts {
+  padding-bottom: 25px;
+  font-size: 18px;
+}
+
+.admin__form-parts input {
+  width: 50%;
+  height: 25px;
+  font-size: 20px;
+}
+
+.admin__form-parts select {
+  width: 30%;
+  height: 25px;
+  font-size: 18px;
+}
+
+.admin__form-parts label {
+  display: inline-block;
+  width: 30%;
+}
+
+.admin__form-submit {
+  text-align: center;
+}
+
+.admin__form-submit input {
+  font-size: 16px;
+  font-weight: bold;
+  padding: 5px 25px;
+  border: none;
+  background-color: grey;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.admin__form-submit input:hover {
+  background-color: darkgrey;
+}
+
+.admin__result {
+  margin-top: 30px;
+}
+
+.admin__result-ttl {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.admin__result-ttl p {
+  padding-right: 15px;
+}
+
+.admin__result th {
+  border-bottom: 2px solid gray;
+  width: 200px;
+  text-align: left;
+  padding-bottom: 5px;
+}
+
+.admin__result td {
+  padding: 10px 0;
+}
+
+.admin__form-error {
+  color: red;
+  padding: 5px 0 0 31%;
+}
+
+/*  店舗代表者画面スタイル */
+.manager {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.manager__title {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  display: flex;
+}
+
+.manager__memu {
+  width: 100%;
+  padding: 40px 30px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 3px 10px 0 rgba(0, 0, 0, .5);
+  display: flex;
+  justify-content: space-between;
+}
+
+.manager__memu div {
+  width: 28%;
+  text-align: center;
+  font-size: 20px;
+  margin: 0 15px;
+  background-color: lightslategray;
+  border-radius: 5px;
+  color: white;
+  box-shadow: 0 3px 10px 0 rgba(0, 0, 0, .5);
+}
+
+.manager__memu div a {
+  text-decoration: none;
+  color: white;
+  display: inline-block;
+  width: 100%;
+  padding: 18px 0;
+}
+
+.manager__memu div:hover {
+  color: black;
+  background-color: lightsteelblue;
+}
+
+.manager__memu div a:visited {
+  color: white;
+}
+
+
+
+/* 店舗作成画面 */
+
+.manager__shop {
+  width: 100%;
+  padding: 40px 50px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 3px 10px 0 rgba(0, 0, 0, .5);
+}
+
+.shop-overview {
+  width: 50%;
+  height: 75px;
+  resize: none;
+  font-size: 20px;
+}
+
+.shop-btn {
+  width: 20%;
+  height: 50px;
+}
+
+
+.shop__form-parts {
+  padding-bottom: 25px;
+  font-size: 18px;
+}
+
+.shop__form-parts label {
+  display: inline-block;
+  width: 30%;
+}
+
+.shop__form-parts input {
+  font-size: 18px;
+}
+
+#preview {
+  margin-top: 20px;
+}
+
+#preview img {
+  width: 30%;
+  margin-left: 30%;
+  border: solid 1px silver;
+}
+
+/* 予約情報確認画面 */
+.dateform input {
+  width: 35%;
+}
+
+.reserve-select select {
+  width: 35%;
+}
+
+.admin__result-datetime {
+  font-size: 14px;
+}
+
+.admin__result-mail-btn {
+  background-color: lightslategray;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+
+.admin__result-mail-btn:hover {
+  background-color: #8E9399;
+}
+
+/* メール送信画面　*/
+
+.mail {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.manager__mail {
+  width: 100%;
+  padding: 40px 30px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 3px 10px 0 rgba(0, 0, 0, .5);
+}
+
+.admin__form-parts-name,
+.admin__form-parts-email {
+  border: none;
+  outline: none;
+}
+
+.admin__form-parts-msg {
+  width: 50%;
+  height: 30vh;
+}
+
+.mail-center {
+  vertical-align: top;
+}
+
+/* メール送信完了画面　*/
+.send {
+  width: 30%;
+  margin: 100px auto;
+}
+
+.send-content {
+  text-align: center;
+}
+
+.send-content p {
+  font-size: 24px;
+  padding-bottom: 30px;
+}
+
+.send-content input {
+  font-size: 18px;
+}

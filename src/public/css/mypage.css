@@ -1,0 +1,266 @@
+
+.mypage {
+  width: 100%;
+  display: flex;
+}
+
+.mypage__status {
+  width:30%;
+  margin-top: 7vh;
+  margin-right: 5vw;
+}
+
+.mypage__favorite {
+  width: 60%;
+}
+
+.mypage__status-ttl {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 3vh;
+  display: flex;
+}
+
+.mypage__status-ttl-item {
+  padding-top: 8px;
+  padding-right: 15px;
+}
+
+.mypage__status-ttl-item {
+  color: gray;
+}
+
+.mypage__status-ttl-item.active {
+  color: black;
+}
+
+
+.mypage__status-cards {
+  display: none;
+}
+
+.mypage__status-cards.active {
+  display: block;
+} 
+
+
+.mypage__status-card {
+  height: 220px;
+  border: 1px solid;
+  margin-bottom: 3vh;
+  border-radius: 5px;
+  color: white;
+  background-color: #305dff;
+  font-size: 14px;
+  padding: 30px 5% 20px 5%;
+}
+
+.mypage__status-card-ttl{
+  padding-bottom: 40px;
+  clear: both;
+}
+
+.mypage__status-card-content {
+  display: flex;
+  padding-bottom: 20px;
+}
+
+.mypage__status-card-name {
+  width: 40%;
+}
+
+.mypage__status-card-ttl div {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.mypage__status-card-ttl img {
+  width: 80%;
+}
+
+.mypage__status-card-change {
+  text-align: right;
+}
+
+.mypage__status-card-change button {
+  background-color: white;
+  color: #305dff;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.mypage__status-card-rateBtn-done {
+  pointer-events: none;
+}
+
+.batu-circle {
+  float: right;
+}
+
+.batu-circle input {
+  width: 100%;
+}
+
+.mypage__favorite-username {
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 4vh;
+}
+
+.mypage__favorite-ttl {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 3vh;
+}
+
+
+.mypage__favorite-contents {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.shopcard {
+  width: 40%;
+  height: 270px;
+  margin: 0 50px 30px 0;
+  border-radius: 5px;
+  box-shadow: 0 3px 10px 0 rgba(0, 0, 0, .5);
+}
+
+.shopcard-img {
+  width: 100%;
+}
+
+.shopcard-ttl {
+  padding: 15px 20px 10px 20px;
+  font-weight: bold;
+}
+
+.flex {
+  display: flex;
+  padding: 0 0 15px 20px;
+}
+
+.flex p {
+  font-size: 12px;
+}
+
+.shopcard-area {
+  padding-right: 3px;
+}
+
+.shopcard-img img {
+  width: 100%;
+  height: 140px;
+  border-radius: 5px 5px 0 0;
+  object-fit: cover;
+}
+
+.favorite-img {
+  width: 90%;
+  cursor: pointer;
+}
+
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px 0 20px;
+}
+
+.shopcard-detail {
+  background-color: #305dff;
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+/* QRコード関連 */
+.mypage__status-card-flex {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.qr {
+  margin-right: 15px;
+}
+
+@media screen and (max-width: 768px) {
+
+  .mypage {
+    display: block;
+    width: 100%;
+  }
+
+  .mypage__status {
+    width: 100%;
+    margin-top: 0;
+  }
+
+  .mypage__status-ttl-item {
+    font-size: 32px;
+  }
+
+  .mypage__status-cards.active {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .mypage__status-card {
+    width: 40%;
+    margin-right: 25px;
+    font-size: 18px;
+    height: 260px;
+    padding: 30px 20px 20px 20px;
+  }
+
+  .mypage__status-card-change button {
+    font-size: 18px;
+    margin-top: 10px;
+  }
+
+  .mypage__favorite {
+    width: 100%;
+  }
+
+  .mypage__favorite-username{
+    margin-top: 50px;
+    font-size: 32px;
+  }
+
+  .mypage__favorite-ttl {
+    font-size: 28px;
+  }
+
+  .shopcard {
+    width: 46%;
+    height: 360px;
+    margin: 0 25px 30px 0;
+  }
+
+  .shopcard-img img {
+    height: 200px;
+  }
+
+  .shopcard-ttl {
+    font-size: 24px;
+  }
+
+  .flex p {
+    font-size: 16px;
+    margin-top: 10px;
+  }
+
+  .shopcard-detail {
+    font-size: 16px;
+  }
+
+  .favorite-img {
+    width: 120%;
+  }
+
+}

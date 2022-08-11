@@ -1,0 +1,54 @@
+
+.menu {
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  background-color: white;
+}
+
+.menu__header {
+  padding: 30px 0 0 90px;
+}
+
+.menu__header img {
+  width: 4%;
+}
+
+.menu__content {
+  margin: 150px auto;
+  width: 50%;
+  text-align: center;
+  list-style: none;
+  font-size: 35px;
+  color: #305dff;
+}
+
+.menu__content li {
+  padding: 20px 0;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:visited {
+  color: black;
+}
+
+@media screen and (max-width: 768px) {
+  .menu__header img {
+    width: 8%;
+  }
+  .menu__content {
+    font-size: 45px;
+  }
+  .menu__content li {
+    padding: 45px 0;
+  }
+}
+

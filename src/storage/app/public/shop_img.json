@@ -1,0 +1,84 @@
+{
+    "img":[
+    {
+        "shop_id": "1",
+        "img": "sushi.jpg"
+    },
+    {
+        "shop_id": "2",
+        "img": "yakiniku.jpg"
+    },
+    {
+        "shop_id": "3",
+        "img": "izakaya.jpg"
+    },
+    {
+        "shop_id": "4",
+        "img": "italian.jpg"
+    },
+    {
+        "shop_id": "5",
+        "img": "ramen.jpg"
+    },
+    {
+        "shop_id": "6",
+        "img": "yakiniku.jpg"
+    },
+    {
+        "shop_id": "7",
+        "img": "italian.jpg"
+    },
+    {
+        "shop_id": "8",
+        "img": "ramen.jpg"
+    },
+    {
+        "shop_id": "9",
+        "img": "izakaya.jpg"
+    },
+    {
+        "shop_id": "10",
+        "img": "sushi.jpg"
+    },
+    {
+        "shop_id": "11",
+        "img": "yakiniku.jpg"
+    },
+    {
+        "shop_id": "12",
+        "img": "yakiniku.jpg"
+    },
+    {
+        "shop_id": "13",
+        "img": "izakaya.jpg"
+    },
+    {
+        "shop_id": "14",
+        "img": "sushi.jpg"
+    },
+    {
+        "shop_id": "15",
+        "img": "ramen.jpg"
+    },
+    {
+        "shop_id": "16",
+        "img": "izakaya.jpg"
+    },
+    {
+        "shop_id": "17",
+        "img": "sushi.jpg"
+    },
+    {
+        "shop_id": "18",
+        "img": "yakiniku.jpg"
+    },
+    {
+        "shop_id": "19",
+        "img": "italian.jpg"
+    },
+    {
+        "shop_id": "20",
+        "img": "sushi.jpg"
+    }
+  ]
+}
