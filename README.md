@@ -40,7 +40,15 @@
 <br>
 <br>
 
-## システム構成図
+## システム構成
+本番環境として、AWS上に以下のような環境を構築しました。
+
+![システム構成図 drawio](https://user-images.githubusercontent.com/82810290/184335573-e07b6e23-15dc-4d7c-bb05-79b2159362e9.png)
+
+<br>
+<br>
+
+
 ## 環境構築
 以下の手順にてEC２上にDocker環境を構築しました。
 
@@ -75,7 +83,7 @@
 ```
 <br>
 
-7. composerのupdate(行わないと、エラーやフリーズが起きます)
+7. composer本体のupdate(行わないと、エラーやフリーズが起きます)
 ```
 /app# composer self-update
 ```
