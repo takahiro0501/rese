@@ -21,6 +21,6 @@ class RoleMiddleware
             return $next($request);
         } 
 
-        return view('role-error');
+        return view('errors.role-error');
     }
 }
