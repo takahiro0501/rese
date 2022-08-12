@@ -12,12 +12,13 @@
   <br>
   
 ## 開発環境
-・仕様言語：PHP 8.1.6  
-・フレームワーク：Laravel Framework 8.83.22  
-・docker環境：laravel/sail 1.0.1
-・データベース：MySql　Ver 15.1 Distrib 10.4.24-MariaDB  
-・ストレージ：AWS S3  
-・メールテスト：MailTrap  
+・仕様言語：PHP 8.1.6 <br>
+・フレームワーク：Laravel Framework 8.83.22 <br>
+・データベース：MySql　Ver 15.1 Distrib 10.4.24-MariaDB <br>
+・ストレージ：AWS S3 <br>
+・メールテスト：MailTrap <br>
+・docker環境：laravel/sail 1.0.1 <br>
+ <br>
 <details>
 <summary>Laravel追加パッケージ</summary>
 
