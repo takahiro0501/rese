@@ -83,7 +83,7 @@
 ```
 <br>
 
-7. composerのupdate(行わないと、エラーやフリーズが起きます)
+7. composer本体のupdate(行わないと、エラーやフリーズが起きます)
 ```
 /app# composer self-update
 ```
