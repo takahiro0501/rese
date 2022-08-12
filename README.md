@@ -43,9 +43,7 @@
 ## システム構成
 本番環境として、AWS上に以下のような環境を構築しました。
 
-![システム構成図 drawio](https://user-images.githubusercontent.com/82810290/184332481-17a31fee-9325-47ff-b699-cee12f27a424.png)
-
-
+![システム構成図 drawio](https://user-images.githubusercontent.com/82810290/184335573-e07b6e23-15dc-4d7c-bb05-79b2159362e9.png)
 
 <br>
 <br>
