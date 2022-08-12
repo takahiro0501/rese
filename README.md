@@ -265,6 +265,8 @@ https://user-images.githubusercontent.com/82810290/183557596-bf5ce10a-8b2e-4cc3-
 ![admin3](https://user-images.githubusercontent.com/82810290/183578997-33693bc0-5bf6-4b9d-a239-a632300c8ae1.png)
 
 
-
-
+#### 今後の課題
+・PHPUnitを使用してテストを作成する
+・Circle CIを使ってデプロイとテストの自動化を行う
+・払い戻し機能等、決済に関する追加機能を実装する
 
