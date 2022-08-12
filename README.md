@@ -40,7 +40,17 @@
 <br>
 <br>
 
-## システム構成図
+## システム構成
+本番環境として、AWS上に以下のような環境を構築しました。
+
+![システム構成図 drawio](https://user-images.githubusercontent.com/82810290/184332481-17a31fee-9325-47ff-b699-cee12f27a424.png)
+
+
+
+<br>
+<br>
+
+
 ## 環境構築
 以下の手順にてEC２上にDocker環境を構築しました。
 
