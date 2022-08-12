@@ -12,11 +12,13 @@
   <br>
   
 ## 開発環境
-・仕様言語：PHP 8.1.6  
-・フレームワーク：Laravel Framework 8.83.22  
-・データベース：MySql　Ver 15.1 Distrib 10.4.24-MariaDB  
-・ストレージ：AWS S3  
-・メールテスト：MailTrap  
+・仕様言語：PHP 8.1.6 <br>
+・フレームワーク：Laravel Framework 8.83.22 <br>
+・データベース：MySql　Ver 15.1 Distrib 10.4.24-MariaDB <br>
+・ストレージ：AWS S3 <br>
+・メールテスト：MailTrap <br>
+・docker環境：laravel/sail 1.0.1 <br>
+ <br>
 <details>
 <summary>Laravel追加パッケージ</summary>
 
@@ -38,6 +40,87 @@
 <br>
 <br>
 
+## システム構成図
+## 環境構築
+以下の手順にてEC２上にDocker環境を構築しました。
+
+1. EC２にログイン
+2. ディレクトリ移動
+```
+/# cd /var/www
+```
+<br>
+
+3. ソースコードダウンロード
+```
+/# git clone https://github.com/takahiro0501/rese
+```
+<br>
+
+4. Dockerコンテナのビルドと起動
+```
+/# docker-compose up -d --build
+```
+<br>
+
+5. envファイル作成（ご自身の環境に合わせたDB、AWS、Mail、Stripeの環境変数を設定ください）
+```
+/# cp .env.example .env
+```
+<br>
+
+6. アプリケーションサーバコンテナ内へ移動
+```
+/# docker compose exec app bash
+```
+<br>
+
+7. composerのupdate(行わないと、エラーやフリーズが起きます)
+```
+/app# composer self-update
+```
+<br>
+
+8. 必要ファイルのダウンロード
+```
+/app# composer update
+```
+<br>
+
+9. アプリケーションキーの作成
+```
+/app# php artisan key:generate
+```
+<br>
+
+10. テーブル作成（本プロジェクトでは、RDSにreservationというDBを事前に作成しています）
+```
+/app# php artisan migrate:fresh
+```
+<br>
+
+11. 初期データの作成
+```
+/app# php artisan db:seed
+```
+<br>
+
+12. S3に初期データ店舗の画像をアップロード
+```
+/app# php artisan s3:upload
+```
+<br>
+
+13. strage配下に権限付与
+```
+/app# chmod 777 -R storage/
+```
+<br>
+
+<br>
+
+
+
 ## 機能一覧
 
  - [飲食店一覧表示と検索](#飲食店一覧表示と検索)
@@ -51,10 +134,6 @@
 
 <br>
 <br>
-
-## システム構成図
-## ローカル環境での構築
-
 
 
 # 機能詳細
