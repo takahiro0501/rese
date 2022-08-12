@@ -86,8 +86,6 @@ class ManagerController extends Controller
     //店舗情報更新メソッド
     public function updateExec(ShopUpdateRequest $request)
     {
-        dd($request->file('file'));
-
         //対象のショップデータ取得
         $shop = Shop::find($request->id);
         if( !empty($request->file('file')) ){
