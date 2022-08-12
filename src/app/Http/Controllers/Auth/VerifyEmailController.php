@@ -9,28 +9,20 @@ use Illuminate\Foundation\Auth\EmailVerificationRequest;
 
 class VerifyEmailController extends Controller
 {
-    /**
-     * Mark the authenticated user's email address as verified.
-     *
-     * @param  \Illuminate\Foundation\Auth\EmailVerificationRequest  $request
-     * @return \Illuminate\Http\RedirectResponse
-     */
+    //メール認証メソッド
     public function __invoke(EmailVerificationRequest $request)
     {
-
         //既に認証済みの場合は,home画面へ遷移
         if ($request->user()->hasVerifiedEmail()) {
             return redirect()->route('home');
         }
-
-        //認証処理
+        //メール認証処理
         if ($request->user()->markEmailAsVerified()) {
             event(new Verified($request->user()));
         }
-
         return view('auth.verify-complete');
     }
-
+    //メール認証成功画面
     public function index()
     {
         return view('auth.verify-email');

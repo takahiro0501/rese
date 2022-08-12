@@ -8,7 +8,6 @@
   </x-slot>
 
   <!-- 店舗詳細情報 -->
-  <!-- 2022/07/15評価機能実装に伴い,切り替えタブ機能追加 -->
   <x-slot name="shop">
     <div class="detail__shop-ttl" id="detail__shop-ttl">
       <div class="detail__shop-ttl-back">
@@ -22,7 +21,7 @@
       </div>
     </div>
 
-    <!-- 2022/07/15評価機能実装に伴い,口コミコンテンツ追加 -->
+    <!-- 口コミコンテンツ -->
     <div class="detail__shop-review">
       <div class="detail__shop-review-item active">
         <x-shop-detail :shop="$shop" />

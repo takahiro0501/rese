@@ -20,7 +20,7 @@ class ShopMakeRequest extends FormRequest
             'file' => ['required', 'max:10240', 'mimes:jpg,jpeg,png,gif']
         ];
     }
-
+    
     public function messages()
     {
         return [

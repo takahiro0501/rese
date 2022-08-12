@@ -10,6 +10,7 @@ use Illuminate\Validation\ValidationException;
 
 class AuthenticatedSessionController extends Controller
 {
+    //ログイン画面表示
     public function create()
     {
         return view('auth.login');

@@ -15,7 +15,7 @@ class SelectTime extends Component
 
     public function __construct($msg, $id=null)
     {
-        //店舗情報update時にDBのデータを取得
+        //店舗情報update時に営業開始、営業終了時間データを取得
         if(isset($id) && $msg == 'start'){
             $shoptime = ShopTime::where('shop_id', $id)->first();
             $dt = substr($shoptime->start_time,0,5);
@@ -39,11 +39,6 @@ class SelectTime extends Component
         $this->times = $times;
     }
 
-    /**
-     * Get the view / contents that represent the component.
-     *
-     * @return \Illuminate\Contracts\View\View|\Closure|string
-     */
     public function render()
     {
         return view('components.select-time');

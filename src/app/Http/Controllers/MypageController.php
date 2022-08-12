@@ -17,6 +17,7 @@ use Stripe\Charge;
 
 class MypageController extends Controller
 {
+    //Mypage画面表示
     public function index()
     {
         //ユーザ情報取得
@@ -71,19 +72,26 @@ class MypageController extends Controller
         return view('Qr',['url'=> $url]);
     }
 
-    //QRコード発行メソッド
+    //QR照合メソッド
     public function qrVerify(Request $request)
     {
         $token = $request->token;
+        //期限内かチェック
         if ( $request->hasValidSignature()) {
+            //トークン照合チェック
             $reserveToken = ReserveToken::where('token', $token)->first();
             if(!empty($reserveToken)){
+                //トークン照合後、削除
                 ReserveToken::where('token', $token)->delete();
+                //照合情報update
                 Reservation::where('id',$reserveToken->reservation_id)->update(['visited' => 1]);
+                //照合完了後、予約データ取得
                 $reservation = Reservation::where('id',$reserveToken->reservation_id)->first();
+
                 return view('QrVerify', ['reservation' => $reservation]);
             }
         } 
+        //照合不可の場合
         return view('QrVerify');
     }
 
@@ -108,7 +116,6 @@ class MypageController extends Controller
         } catch (Error $e) {
             echo $e->getMessage();
         }
-
         //決済フラグ書き換え
         Reservation::where('id',$request->id)->update(['payment' => 1]);
 

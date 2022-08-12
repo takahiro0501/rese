@@ -18,11 +18,6 @@ class ShopMail extends Mailable
         $this->details = $details;
     }
 
-    /**
-     * Build the message.
-     *
-     * @return $this
-     */
     public function build()
     {   
         return $this->subject($this->details['title'])

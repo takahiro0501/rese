@@ -13,7 +13,7 @@ use App\Http\Requests\Auth\RegisterRequest;
 
 class RegisteredUserController extends Controller
 {
-
+    //ユーザ登録画面表示
     public function create()
     {
         return view('auth.register');

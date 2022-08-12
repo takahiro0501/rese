@@ -42,7 +42,6 @@ class ManagerController extends Controller
         $file = $request->file('file');
         $path = Storage::disk('s3')->putFile('image', $file, 'public');
         $url = Storage::disk('s3')->url($path);
-
         //店舗情報Insert
         $shop = Shop::create([
             'area_id' => $request->area ,
@@ -51,21 +50,17 @@ class ManagerController extends Controller
             'overview' => $request->overview ,
             'img' => $url
         ]);
-
         //店舗営業時間Insert
         $shoptime = ShopTime::create([
             'shop_id' => $shop->id,
             'start_time' => $request->start ,
             'end_time' => $request->end ,
         ]);
-
-
         //作成した店舗情報の権限作成
         $role = Role::create([
             'shop_id' => $shop->id,
             'name' => $shop->shop_name
         ]);
-
         //作成した権限を店舗代表者に割り当て
         $user = User::where('id', Auth::id())
                     ->update(['role_id' => $role->id]);
@@ -76,7 +71,7 @@ class ManagerController extends Controller
     //店舗情報更新画面表示
     public function update()
     {
-        //店舗権限情報の取得
+        //店舗情報の取得
         $user = Auth::user();
         $shop = Shop::find($user->role->shop_id);
 
@@ -89,39 +84,33 @@ class ManagerController extends Controller
         //対象のショップデータ取得
         $shop = Shop::find($request->id);
         if( !empty($request->file('file')) ){
-            
             //既存画像の削除処理
             $str = $shop->img;
             $img = mb_substr($str, mb_strrpos($str, 'amazonaws.com/') + 14, mb_strlen($str));
             $bool = Storage::disk('s3')->delete($img);
-
             //AWSs3への画像アップロード
             $file = $request->file('file');
             $path = Storage::disk('s3')->putFile('image', $file, 'public');
             $url = Storage::disk('s3')->url($path);
-            
         }
-
-        //updateデータ
+        //店舗updateデータ
         $item = [
             'area_id' => $request->area,
             'genre_id' => $request->genre,
             'shop_name' => $request->name,
             'overview' => $request->overview
         ];
+        //画像更新があれば追加
         if(isset($url)){
             $item += array('img' => $url);
         }
-
         //update実行
         Shop::where('id', $request->id)->update($item);
-
         //営業時間変更
         $dt = [
             'start_time' => $request->start,
             'end_time' => $request->end
         ];
-        
         ShopTime::where('shop_id', $request->id)->update($dt);
 
         return redirect()->route('manager.home');
@@ -130,16 +119,13 @@ class ManagerController extends Controller
     //予約情報確認画面表示
     public function reservation(Request $request)
     {
-
         //セッション情報が残っていれば破棄する
         $request->session()->forget('_old_input');
-
-        //予約時間データ作成
+        //検索リストの時間データ作成
         $time =  new Carbon('2018-01-01 23:30');
         for( $i=0 ; $i<48 ; $i++ ){
             $times[] = $time->addMinutes(30)->format('H:i');
         }
-
         //予約データ取得
         $user = Auth::user();
         $reservations = Reservation::where('shop_id',$user->role->shop_id)->orderBy('start_at','asc')->get();
@@ -150,25 +136,20 @@ class ManagerController extends Controller
     //予約情報画面検索メソッド
     public function search(Request $request)
     {
-
         //時間データ作成
         $time =  new Carbon('2018-01-01 23:30');
         for( $i=0 ; $i<48 ; $i++ ){
             $times[] = $time->addMinutes(30)->format('H:i');
         }
-
         //検索データ取得
         $number = $request->number;
         $date = $request->date;
         $time = $request->time;
-                
         //クエリ準備
         $query = Reservation::query();
-        
-        //権限のある店舗データのみ
+        //権限のある店舗データのみ取得
         $shop_id = Auth::user()->role->shop_id;
         $query->where('shop_id', '=', $shop_id);
-
         //登録日」を検索条件に含める
         if(!empty($date)){
             $query->where('start_at', 'like', $date.'%');
@@ -181,10 +162,8 @@ class ManagerController extends Controller
         if(!empty($number)){
             $query->where('num_of_users', '=' , $number);            
         }
-
         //時間順にソートして実行
         $reservations = $query->orderBy('start_at','asc')->get();
-
         //検索結果をセッションデータに書き込む
         $request->session()->put([
             '_old_input' => [
@@ -212,11 +191,8 @@ class ManagerController extends Controller
             'name' => $request->name,
             'body' => $request->msg,
         ];
-
         Mail::to($request->email)->send(new ShopMail($details));
 
         return view('admin.shop-manager-mailsend');
-        
     }
-
 }

@@ -44,5 +44,4 @@ class VerifyEmail extends Notification
             ]
         );
     }
-
 }

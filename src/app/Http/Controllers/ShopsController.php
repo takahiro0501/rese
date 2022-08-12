@@ -23,7 +23,6 @@ class ShopsController extends Controller
         $shops = Shop::all();
         $areas = Area::all();
         $genres = Genre::all();
-
         //セッション情報が残っていれば破棄する
         $request->session()->forget('_old_input');
 
@@ -36,25 +35,20 @@ class ShopsController extends Controller
         //ドロップダウンメニュー取得
         $areas = Area::all();
         $genres = Genre::all();
-
         //クエリ準備
         $query = Shop::query();
-
         //エリア検索
         if($request->area_id !== '0'){
             $query->Where('area_id', $request->area_id);
         }
-
         //ジャンル検索
         if($request->genre_id !== '0'){
             $query->Where('genre_id', $request->genre_id);
         }
-
         //キーワード検索
         if($request->has('keyword')){
             $query->where('shop_name', 'like', '%'. $request->keyword .'%');
         }
-
         //クエリ実行
         $shops = $query->get();
 

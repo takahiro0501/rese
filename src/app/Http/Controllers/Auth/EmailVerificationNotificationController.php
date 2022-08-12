@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Providers\RouteServiceProvider;
 use Illuminate\Http\Request;
 
+//認証メール送信メソッド
 class EmailVerificationNotificationController extends Controller
 {
     public function store(Request $request)

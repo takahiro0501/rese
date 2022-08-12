@@ -19,7 +19,7 @@ class ShopUpdateRequest extends FormRequest
             'file' => ['max:10240', 'mimes:jpg,jpeg,png,gif']
         ];
     }
-
+    
     public function messages()
     {
         return [

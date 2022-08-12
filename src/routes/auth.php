@@ -21,7 +21,7 @@ Route::middleware('guest')->group(function () {
 
 });
 
-//ログイン且つメール未承認ルート
+//メール承認関連ルート
 Route::middleware('auth')->group(function () {
     //メール未認証アクセス画面
     Route::get('verify-email', [EmailVerificationPromptController::class, '__invoke'])->name('verification.notice');

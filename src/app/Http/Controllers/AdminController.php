@@ -45,6 +45,7 @@ class AdminController extends Controller
         }
     }
 
+    //店舗代表者作成画面
     public function index(Request $request)
     {
         $shopManagers = User::where('role_id', '>', 1)->orderBy('updated_at','desc')->get();
@@ -53,9 +54,9 @@ class AdminController extends Controller
 
     }
 
+    //店舗作成メソッド
     public function create(RegisterRequest $request)
     {
-
         //ユーザ作成
         $user = User::create([
             'name' => $request->name,
@@ -63,7 +64,6 @@ class AdminController extends Controller
             'password' => Hash::make($request->password),
             'role_id' => 2
         ]);
-
         //権限を一時的にダミーデータと結びつける
         User::where('id', $user->id )->update(['role_id' => 2]);
 
@@ -74,13 +74,9 @@ class AdminController extends Controller
     public function destroy(Request $request)
     {
         Auth::guard('web')->logout();
-
         $request->session()->invalidate();
-
         $request->session()->regenerateToken();
 
         return redirect()->route('admin.login');
     }
-
-
 }
