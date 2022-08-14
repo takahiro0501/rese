@@ -79,6 +79,22 @@
         "start_at": "2022-08-30 19:30:00",
         "visited": "1",
         "payment": "1"
+    },
+    {
+        "user_id": "22",
+        "shop_id": "1",
+        "num_of_users": "99",
+        "start_at": "2022-07-30 18:30:00",
+        "visited": "1",
+        "payment": "1"
+    },
+    {
+        "user_id": "22",
+        "shop_id": "1",
+        "num_of_users": "7",
+        "start_at": "2022-07-30 20:30:00",
+        "visited": "1",
+        "payment": "1"
     }
-  ]
+]
 }
