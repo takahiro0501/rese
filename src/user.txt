@@ -1,0 +1,29 @@
+| name   | email           | email_verified_at   | password | role_id | 説明          |
+|--------|-----------------|---------------------|----------|---------|-------------|
+| admin  | admin@test.com  | NULL                | 12345678 | 1       | 管理者         |
+| shop1  | shop1@test.com  | NULL                | 12345678 | 3       | 仙人店代表       |
+| shop2  | shop2@test.com  | NULL                | 12345678 | 4       | 牛助店代表       |
+| shop3  | shop3@test.com  | NULL                | 12345678 | 5       | 戦慄店代表       |
+| shop4  | shop4@test.com  | NULL                | 12345678 | 6       | ルーク店代表      |
+| shop5  | shop5@test.com  | NULL                | 12345678 | 7       | 志摩屋店代表      |
+| shop6  | shop6@test.com  | NULL                | 12345678 | 8       | 香店代表        |
+| shop7  | shop7@test.com  | NULL                | 12345678 | 9       | JJ店代表       |
+| shop8  | shop8@test.com  | NULL                | 12345678 | 10      | らーめん極み店代表   |
+| shop9  | shop9@test.com  | NULL                | 12345678 | 11      | 鳥雨店代表       |
+| shop10 | shop10@test.com | NULL                | 12345678 | 12      | 築地色合店代表     |
+| shop11 | shop11@test.com | NULL                | 12345678 | 13      | 晴海店代表       |
+| shop12 | shop12@test.com | NULL                | 12345678 | 14      | 三子店代表       |
+| shop13 | shop13@test.com | NULL                | 12345678 | 15      | 八戒店代表       |
+| shop14 | shop14@test.com | NULL                | 12345678 | 16      | 福助店代表       |
+| shop15 | shop15@test.com | NULL                | 12345678 | 17      | ラー北店代表      |
+| shop16 | shop16@test.com | NULL                | 12345678 | 18      | 翔店代表        |
+| shop17 | shop17@test.com | NULL                | 12345678 | 19      | 経緯店代表       |
+| shop18 | shop18@test.com | NULL                | 12345678 | 20      | 漆店代表        |
+| shop19 | shop19@test.com | NULL                | 12345678 | 21      | THE TOOL店代表 |
+| shop20 | shop20@test.com | NULL                | 12345678 | 22      | 木船店代表       |
+| user1  | user1@test.com  | 2022-07-27 10:09:19 | 12345678 | 0       | メール認証ユーザ    |
+| user2  | user2@test.com  | 2022-07-27 10:09:19 | 12345678 | 0       | メール認証ユーザ    |
+| user3  | user3@test.com  | 2022-07-27 10:09:19 | 12345678 | 0       | メール認証ユーザ    |
+| user4  | user4@test.com  | NULL                | 12345678 | 0       | メール未認証ユーザ   |
+| user5  | user5@test.com  | NULL                | 12345678 | 0       | メール未認証ユーザ   |
+

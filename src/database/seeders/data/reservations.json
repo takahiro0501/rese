@@ -55,6 +55,31 @@
         "start_at": "2022-12-26 09:00:00",
         "visited": "0",
         "payment": "0"
-    }
+    },
+    {
+        "user_id": "22",
+        "shop_id": "1",
+        "num_of_users": "99",
+        "start_at": "2022-09-24 09:00:00",
+        "visited": "1",
+        "payment": "0"
+    },
+    {
+        "user_id": "22",
+        "shop_id": "1",
+        "num_of_users": "1",
+        "start_at": "2022-09-24 22:00:00",
+        "visited": "1",
+        "payment": "0"
+    },
+    {
+        "user_id": "22",
+        "shop_id": "1",
+        "num_of_users": "1",
+        "start_at": "2022-08-30 19:30:00",
+        "visited": "1",
+        "payment": "1"
+    },
+
   ]
 }
